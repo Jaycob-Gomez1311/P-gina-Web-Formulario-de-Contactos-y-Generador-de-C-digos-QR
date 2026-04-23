@@ -107,3 +107,27 @@ button {
   font-size: 13px;
   color: #777;
 }
+
+
+/* =========================
+   CENTRAR QR EN TODA LA APP
+   ========================= */
+
+#qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* canvas del QR */
+#qr canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* botones debajo del QR */
+#qr button {
+  display: block;
+  margin: 10px auto 0 auto;
+}
