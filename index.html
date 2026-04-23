@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Crear Contacto</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>📇 Crear Contacto</h1>
+
+  <form id="form">
+
+    <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+    <select id="pais"></select>
+
+    <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+
+    <input type="email" id="correo" placeholder="Correo (opcional)">
+
+    <button type="submit">Generar QR</button>
+
+  </form>
+
+  <div id="qr"></div>
+
+  <button id="descargar" class="hidden">Descargar QR</button>
+
+  <a href="contactos.html" class="btn-link">
+    📂 Ver contactos guardados →
+  </a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="https://unpkg.com/libphonenumber-js@1.11.17/bundle/libphonenumber-max.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+
+<footer class="footer">
+  <p>Desarrollado por:</p>
+  <strong>Jaycob Ricardo Gómez Ortiz</strong>
+  <span>ID: 100529648</span>
+</footer>
+
+</body>
+</html>

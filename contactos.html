@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contactos</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>📂 Contactos Guardados</h1>
+
+  <div id="lista"></div>
+
+  <a href="index.html" class="btn-link secondary">
+    ← Volver
+  </a>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal hidden">
+
+  <div class="modal-content">
+
+    <h2>✏️ Editar contacto</h2>
+
+    <input id="editNombre" placeholder="Nombre">
+    <input id="editTelefono" placeholder="Teléfono">
+    <input id="editCorreo" placeholder="Correo">
+
+    <div class="modal-buttons">
+
+      <button id="guardarEdit">Guardar</button>
+      <button id="cerrarModal" class="secondary">Cancelar</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="https://unpkg.com/libphonenumber-js@1.11.17/bundle/libphonenumber-max.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/contactos.js"></script>
+
+<footer class="footer">
+  <p>Desarrollado por:</p>
+  <strong>Jaycob Ricardo Gómez Ortiz</strong>
+  <span>ID: 100529648</span>
+</footer>
+
+</body>
+</html>
